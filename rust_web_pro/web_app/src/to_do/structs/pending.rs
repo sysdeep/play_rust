@@ -1,4 +1,4 @@
-use crate::to_do::traits::delete::Delete;
+use crate::to_do::traits::create::Create;
 use crate::to_do::traits::edit::Edit;
 use crate::to_do::traits::get::Get;
 
@@ -20,6 +20,6 @@ impl Pending {
 }
 
 impl Get for Pending {}
+impl Create for Pending {}
 
 impl Edit for Pending {}
-impl Delete for Pending {}
